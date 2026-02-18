@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна робота 2</title>
+
+<style>
+/* просте скидання відступів */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* основні налаштування сторінки */
+body{
+    font-family: Arial;
+    background:#f2f2f2;
+}
+
+/* ===== навігація ===== */
+nav{
+    background:#333;
+    padding:15px;
+}
+
+/* меню в ряд */
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav li{
+    margin:0 15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* ===== hero секція ===== */
+.hero{
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:#4a90e2;
+    color:white;
+}
+
+/* кнопка */
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:5px;
+}
+
+/* ===== портфоліо ===== */
+.portfolio{
+    text-align:center;
+    padding:30px;
+}
+
+/* сітка карток */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:15px;
+    margin-top:20px;
+}
+
+/* картки */
+.card{
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- навігація -->
+<nav>
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про мене</a></li>
+        <li><a href="#">Роботи</a></li>
+        <li><a href="#">Контакти</a></li>
+    </ul>
+</nav>
+
+<!-- hero блок -->
+<section class="hero">
+    <div>
+        <h1>Привіт!</h1>
+        <p>Я студент і вчу HTML та CSS</p>
+        <button>Написати мені</button>
+    </div>
+</section>
+
+<!-- портфоліо -->
+<section class="portfolio">
+    <h2>Мої роботи</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://picsum.photos/300/200?1">
+            <p>Робота 1</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?2">
+            <p>Робота 2</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?3">
+            <p>Робота 3</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
