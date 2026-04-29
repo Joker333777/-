@@ -1,0 +1,33 @@
+let counter = 0;
+
+function sumNumbers() {
+    let x = parseInt(prompt('Введіть перше число:', '0'));
+    let y = parseInt(prompt('Введіть друге число:', '0'));
+    alert('Сума = ' + (x + y));
+}
+
+function multiplyNumbers() {
+    let x = parseInt(prompt('Введіть перше число:', '1'));
+    let y = parseInt(prompt('Введіть друге число:', '1'));
+    alert('Добуток = ' + (x * y));
+}
+
+function compareNumbers() {
+    let x = parseInt(prompt('Введіть перше число:', '0'));
+    let y = parseInt(prompt('Введіть друге число:', '0'));
+
+    if (x > y) {
+        alert('Перше число більше');
+    } else if (x < y) {
+        alert('Друге число більше');
+    } else {
+        alert('Числа рівні');
+    }
+}
+
+function addLine() {
+    counter++;
+    const p = document.createElement('p');
+    p.textContent = 'Рядок №' + counter;
+    document.body.appendChild(p);
+}
